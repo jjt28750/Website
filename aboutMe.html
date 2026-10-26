@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Nixie+One&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous"></script>
+    <script src="formValidation.js" defer></script>
+    <script src="funFacts.js" defer></script>
+
+    <title>ItsJalArts :)</title>
+</head>
+
+<body>
+    <!-- Website Header -->
+    <div id="head">
+        <a href="works.html"> <img class="logo" src="art_files/footer image.png" alt="itsjalarts logo"></a>
+        <img class="header" src="art_files/itsjalarts.png" alt="itsjalarts">
+    </div>
+
+    <!-- Navigation Bar -->
+     <div id="navbar">
+        <a href="works.html"><img class="sectionTitle" src="art_files/works.png" alt="Works"></a>
+        <a href="shop.html"><img class="sectionTitle" src="art_files/shop.png" alt="Sketchbook"></a> 
+        <a href="aboutMe.html"><img class="sectionTitle" src="art_files/about.png" alt="About Me"></a>
+     </div>
+
+     <h1 class="head fuzzy-bubbles-bold">About Me!</h1>
+
+     <div class="gallery">
+        <div id="bioSection">
+            <p class="nixie-one-regular bio">Hi, I'm <span class="fuzzy-bubbles-bold name">Jalen</span> !</p><br>
+
+            <p class="nixie-one-regular bio">I am an artist and designer based in <span class="contrast fuzzy-bubbles-regular">Boston, MA</span> with a BFA in <span class="colorPop fuzzy-bubbles-regular">Illustration</span>.  I love telling stories through illustrations and comics.  I recently went back to school and am working on a degree in <span class="colorPop fuzzy-bubbles-regular">Information Technology</span>, where I found an interest in website design and development!</p><br>
+
+            <p class="nixie-one-regular bio">In my free time, I enjoy baking, reading, and playing video games!</p><br>
+        </div>
+
+        <img class="selfPortrait" src="art_files/card2.png" alt="Self portrait of Jalen">
+     </div>
+
+     <br><br>
+
+     <div class="line"></div>
+
+     <div id="funFactsSection">
+        <h2 class="subHead fuzzy-bubbles-regular darkOrange">Some fun facts!</h2>
+
+        <dl id="funFacts">
+            <dt class="hiddenAnswer nixie-one-regular darkBlue">Some of my favorite books!</dt>
+            <dd>
+                <p class="shadows-into-light-two-regular darkPink">* Piranesi by Susanna Clarke </p>
+                <p class="shadows-into-light-two-regular darkPink">* Babel by R.F. Kuang</p>
+                <p class="shadows-into-light-two-regular darkPink">* Four Treasures of the Sky by Jenny Tinghul Zhang</p>
+            </dd>
+
+            <dt class="hiddenAnswer nixie-one-regular darkBlue">Some of my favorite video games</dt>
+            <dd>
+                <p class="shadows-into-light-two-regular darkPink">* Cat Mail Co.</p>
+                <p class="shadows-into-light-two-regular darkPink">* Terraria</p>
+                <p class="shadows-into-light-two-regular darkPink">* Not a video game but... Magic the Gathering</p>
+            </dd>
+
+            <dt class="hiddenAnswer nixie-one-regular darkBlue">My babies!  Who are also my mascots :)</dt>
+            <dd>
+                <p class="shadows-into-light-two-regular darkPink">* Frank</p>
+                <p class="shadows-into-light-two-regular darkPink">* Lentil</p>
+            </dd>
+        </dl>
+     </div>
+
+     <div class="line"></div>
+     
+     <div class="form">
+        <p class="shadows-into-light-two-regular subHead darkOrange">Let's connect!</p>
+
+        <form id="connectForm">
+            <label for="firstName" class="nixie-one-regular">First Name*:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName" class="nixie-one-regular">Last Name*:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="email" class="nixie-one-regular">Email*:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message" class="nixie-one-regular">Write your message here!*</label>
+            <input type="text" id="message" name="message" required>
+
+            <input type="submit" id="subButton" class="shadows-into-light-two-regular darkBlue" value="Submit Message">
+        </form>
+     </div>
+
+     <div class="line"></div>
+
+     <br><br>
+
+
+</body>
+
+<footer>
+    <img id="myEmail" src="art_files/email.png">
+</footer>
+
+</html>

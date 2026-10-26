@@ -1,0 +1,402 @@
+:root {
+    --baby_powder: #fffbf6;
+    --pumpkin: #ff7c25;
+    --mustard: #ffd651;
+    --uranian_blue: #b8ddff;
+    --polynesian_blue: #005092;
+    --eerie_black: #222426;
+    --pinku: #FFB0D4;
+    --dark_pinku: #FF95B5;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-color: var(--baby_powder);
+}
+
+body {
+    margin-left: 40px;;
+    margin-right: 40px;
+}
+
+/* Fonts */
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.shadows-into-light-two-regular {
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nixie-one-regular {
+  font-family: "Nixie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--eerie_black);
+}
+
+/* color Classes */
+.darkBlue {
+    color: var(--polynesian_blue);
+}
+
+.lightBlue {
+    color: var(--uranian_blue);
+}
+
+.lightYellow {
+    color: var(--mustard)
+}
+
+.darkOrange {
+    color: var(--pumpkin);
+}
+
+.darkPink {
+    color: var(--dark_pinku);
+}
+
+.lightPink {
+    color: var(--pinku)
+}
+
+/* Header CSS */
+#head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 20vh;
+}
+
+.header {
+    height: 20vh;
+}
+
+/* Navbar CSS */
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+.sectionTitle {
+    height: 8vh;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* Footer CSS */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#myEmail {
+    height: 8vh;
+}
+
+/* General CSS */
+.head {
+    font-size: 64px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--polynesian_blue);
+}
+
+.subHead {
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contrast {
+    color: var(--pinku);  
+    -webkit-text-stroke: 1px var(--dark_pinku);  
+}
+
+.colorPop {
+    color: var(--uranian_blue);
+    -webkit-text-stroke: 1px var(--polynesian_blue);
+}
+
+.line {
+    width: 80vw;
+    margin: auto;
+    border-top: 5px dashed var(--mustard);
+}
+
+/* Works CSS */
+.intro {
+    width: 75vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px auto;
+    border: 5px dashed var(--mustard);
+    padding: 15px;
+}
+
+#keywordImage, #keywordImage2 {
+    height: 15vh;
+    margin-top: 20px
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+div#imgOverlay {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #b8ddffbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#imgOverlay figure {
+    display: block;
+    width: 80%;
+    max-width: 800px;;
+}
+
+div#imgOverlay figure img {
+    display: block;
+    margin: 0px auto;
+    height: 95vh;
+    max-width: 80vw;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+div#imgOverlay figure figcaption {
+    text-align: center;
+    font-size: 1.25em;
+    color: var(--eerie_black);
+    margin-top: 10px;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+div#imgOverlay div#overlayClose {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: var(--eerie_black);
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Shop CSS */
+.desc {
+    font-size: 32px;
+    width: 75vw;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.subSignUp {
+    text-align: center;
+}
+
+#mailEmail {
+    width: 50vw;
+    height: 32px;
+}
+
+#subEmail {
+    padding: 5px;
+    background-color: var(--uranian_blue);
+    font-size: 24px;
+}
+
+
+
+#costEstimate {
+    width: 50vw;
+    margin: auto;
+    padding: 25px;
+}
+
+#costEstimate label {
+    display: block;
+    font-size: 32px;
+    width: 500px;
+    text-align: right;
+}
+
+#costEstimate input {
+    padding: 1%;
+    background: var(--baby_powder);
+    color: var(--eerie_black);
+    float: right;
+    clear: both;
+    width: 60pdx;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    position: relative;
+    top: -0.4em;
+}
+
+.est {
+    font-size: 32px;
+    color: var(--pumpkin);
+    margin: 10px auto;
+    text-align: center;
+}
+
+.sampleImg {
+    height: 50vh;
+}
+
+/* About Me CSS */
+#bioSection {
+    width: 50vw;
+    margin-left: 50px;
+}
+
+.bio {
+    font-size: 36px;
+}
+
+.name {
+    color: var(--pumpkin);
+    font-size: 42px;
+}
+
+#funFactsSection {
+    margin: 50px;
+    padding: 15px;
+}
+
+dl#funFacts {
+    display: block;
+    width: 85vw;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+dl#funFacts dt {
+    background: url("art_files/pinkStar.png") left center/25px no-repeat;
+    font-size: 36px;
+    display: block;
+    margin: 10px 0 10px;
+    text-indent: 60px;
+    color: var(--polynesian_blue);
+    cursor: pointer;
+    user-select: none;
+}
+
+dl#funFacts dt.hiddenAnswer {
+    background: url("art_files/blueStar.png") left center/25px no-repeat;
+}
+
+dt + dd {
+    display: none;
+}
+
+dl#funFacts dd p {
+    font-size: 32px;
+    margin: 0 0 15px 65px;
+    text-align: justify;
+}
+
+.form {
+    border: 3px solid var(--pinku);
+    width: 50vw;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.form label {
+    font-size: 24px;
+}
+
+.form input {
+    margin-bottom: 10px;
+}
+
+.form subhead {
+    color: var(--pumpkin);
+}
+
+#firstName, #lastName {
+    width: 14vw;
+}
+
+
+#email {
+    width: 42vw;
+}
+
+#message {
+    width: 48vw;
+    height: 10vh;
+}
+
+#subButton {
+    padding: 5px;
+    background-color: var(--uranian_blue);
+    font-size: 24px;
+}
+
+/* Images */
+#worldBuilding {
+    height: 75vh;
+}
+
+.assets {
+    height: 40vh;
+    padding: 20px;
+}
+
+.aliceWonderland {
+    height: 90vh;
+}
+
+.rainyDay {
+    height: 90vh;
+}
+
+.comic {
+    height: 50vh;
+    padding: 5px;
+}
+
+.sketchImage {
+    height: 50vh;
+}
+
+.selfPortrait{
+    height: 70vh;
+    margin-right: 50px;
+}

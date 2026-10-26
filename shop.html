@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Nixie+One&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <script src="portfolio.js"></script>
+    <script src="estimate.js" defer></script>
+    <script src="email.js" defer></script>
+
+    <title>ItsJalArts :)</title>
+</head>
+
+<body>
+    <!-- Website Header -->
+    <div id="head">
+        <a href="works.html"> <img class="logo" src="art_files/footer image.png" alt="itsjalarts logo"></a>
+        <img class="header" src="art_files/itsjalarts.png" alt="itsjalarts">
+    </div>
+
+    <!-- Navigation Bar -->
+     <div id="navbar">
+        <a href="works.html"><img class="sectionTitle" src="art_files/works.png" alt="Works"></a>
+        <a href="shop.html"><img class="sectionTitle" src="art_files/shop.png" alt="Sketchbook"></a> 
+        <a href="aboutMe.html"><img class="sectionTitle" src="art_files/about.png" alt="About Me"></a>
+     </div>
+
+     <h1 class="head fuzzy-bubbles-bold darkBlue">Shop!</h1>
+
+     <p class="shadows-into-light-two-regular desc" >Interested in buying some items?  I sell in person at events!  Use this cost estimator to see what the cost for the items you're interested in will be.
+
+     <br><br>
+
+     Next in person event: TBA!
+     </p>
+
+     <p class="shadows-into-light-two-regular est">Want to stay up to date with me?  Enter your email to be a part of the mailing list!</p>
+
+     <div class="subSignUp" id="subSignUp">
+        <label class="shadows-into-light-two-regular desc" for="mailEmail">Email: </label>
+        <input type="email" id="mailEmail" name="mailEmail" required>
+
+        <input type="submit" id="subEmail" class="shadows-into-light-two-regular darkBlue" value="Submit Email">
+     </div>
+
+     <br><br>
+     <!-- Estimation form -->
+     <h2 class="subHead nixie-one-regular darkBlue">Cost Estimate</h2>
+     <form id="costEstimate">
+        <fieldset>
+            <input type="number" min="0" max="20" id="sticker3in">
+            <label for="sticker3in">
+                <p class="shadows-into-light-two-regular">3 inch stickers: >$3.00</p>
+            </label>
+
+            <input type="number" min="0" max="20" id="sticker4in">
+            <label for="sticker4in">
+                <p class="shadows-into-light-two-regular">4 inch stickers: $4.00</p>
+            </label>
+
+            <input type="number" min="0" max="10" id="prints">
+            <label for="prints">
+                <p class="shadows-into-light-two-regular">Postcard Prints: $5.00</p>
+            </label>
+
+            <input type="number" min="0" max="10" id="miniPrints">
+            <label for="miniPrints">
+                <p class="shadows-into-light-two-regular">Mini Prints: $3.00</p>
+            </label>
+
+            <div id="totalSection">
+            <p class="shadows-into-light-two-regular est">Total Estimate: <span id="estimate" class="shadows-into-light-two-regular est"></span></p>
+     </div>
+        </fieldset>
+     </form>
+
+     <div class="gallery">
+        <h2 class="subHead nixie-one-regular">Sample Pictures!</h2>
+        <div>
+            <div>
+                <p class="shadows-into-light-two-regular desc">Stickers</p>
+                <img class="sampleImg" src="art_files/20240112_110549.jpg">
+                <img class="sampleImg" src="art_files/Screenshot 2026-10-25 144747.png">
+            </div>
+            <div>
+                <p class="shadows-into-light-two-regular desc">Prints</p>
+                <img class="sampleImg" src="art_files/Screenshot 2026-10-25 144540.png">
+            </div>
+
+    
+        </div>
+        
+     </div>
+
+</body>
+
+<footer>
+    <img id="myEmail" src="art_files/email.png">
+</footer>
+
+</html>
